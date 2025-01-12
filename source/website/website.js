@@ -675,7 +675,12 @@ export class Website
         AddButton (this.toolbar, 'fit', Loc ('Fit model to window'), ['only_on_model'], () => {
             this.FitModelToWindow (false);
         });
-        AddButton (this.toolbar, 'up_y', Loc ('Set Y axis as up vector'), ['only_on_model'], () => {
+        AddButton (this.toolbar, 'fit', Loc ('Fit mesh to window'), ['only_on_model'], () => {
+            //this.FitModelToWindow (false); // JFL
+	    this.navigator.FitMeshToWindow (this.navigator.selection.meshInstandId);    
+        });
+	    
+	AddButton (this.toolbar, 'up_y', Loc ('Set Y axis as up vector'), ['only_on_model'], () => {
             this.viewer.SetUpVector (Direction.Y, true);
         });
         AddButton (this.toolbar, 'up_z', Loc ('Set Z axis as up vector'), ['only_on_model'], () => {
