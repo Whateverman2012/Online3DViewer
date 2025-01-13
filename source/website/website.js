@@ -675,7 +675,7 @@ export class Website
         AddButton (this.toolbar, 'fit', Loc ('Fit model to window'), ['only_on_model'], () => {
             this.FitModelToWindow (false);
         });
-        AddButton (this.toolbar, 'target', Loc ('Fit mesh to window'), ['only_on_model'], () => {
+        AddButton (this.toolbar, 'fit', Loc ('Fit mesh to window'), ['only_on_model'], () => {
 	    this.navigator.FitMeshToWindow(this.navigator.GetSelectedMeshId())
         });
 	    
