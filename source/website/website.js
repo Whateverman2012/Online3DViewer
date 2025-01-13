@@ -677,7 +677,7 @@ export class Website
         });
         AddButton (this.toolbar, 'fit', Loc ('Fit mesh to window'), ['only_on_model'], () => {
             //this.FitModelToWindow (false); // JFL
-	    this.navigator.FitMeshToWindow (this.navigator.selection.meshInstandId);    
+	    this.navigator.FitMeshToWindow (this.navigator.selection.meshInstancedId);    
         });
 	    
 	AddButton (this.toolbar, 'up_y', Loc ('Set Y axis as up vector'), ['only_on_model'], () => {
